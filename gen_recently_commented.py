@@ -26,20 +26,23 @@ if __name__ == "__main__":
         exit(1)
     access_token = sys.argv[1]
     g = Github(access_token)
-    repo = g.get_repo("keithnull/ieee.icu")
+    repo = g.get_repo("sjtu-ieee/ieee.icu")
 
     print("# 最新评论\n")
 
     issues = repo.get_issues(sort="updated")
     date_courses = {}
     for issue in issues:
-        if issue.comments == 0: continue
+        if issue.comments == 0:
+            continue
         title = issue.title
-        if title.split()[0] not in course2file: continue
+        if title.split()[0] not in course2file:
+            continue
         date = str(issue.updated_at).split()[0]
         course_id, course_name = title.split()[:2]
-        date_courses.setdefault(date, []).append("[{} {}]({})".format(course_id, course_name, course2file[course_id]))
+        date_courses.setdefault(date, []).append("[{} {}]({})".format(
+            course_id, course_name, course2file[course_id]))
 
     for date in sorted(date_courses.keys(), reverse=True):
-        print("- {}: ".format(date) + ", ".join(date_courses[date]))
+        print("- {}: ".format(date) + ", ".join(sorted(date_courses[date])))
         print()
