@@ -36,6 +36,12 @@
 
 [最新评论](/recent)
 
+- 2021-09-04: [CS2612 程序语言与编译原理](/courses/grade-3/CS2612)（添加 19 级的内容）
+
+- 2021-07-04: [EI332 计算机组成](/courses/grade-2/EI332)（根据 19 级情况修订）
+
+- 2021-06-24: [EE357 计算机网络](/courses/grade-2/EE357)
+
 - 2021-06-22: [CS258 信息论](/courses/grade-2/CS258)
 
 - 2021-01-17: [CS125 程序设计](/courses/grade-1/CS125)
@@ -58,4 +64,4 @@
 
 - 2020-03-08: [MA227 概率论与随机过程](/courses/grade-2/MA227), [EI333 软件工程](/courses/grade-3/CS3604),  [EI332 计算机组成](/courses/grade-2/EI332)
 
-- 2020-03-07: [CS222 算法设计与分析](/courses/grade-3/CS222), [CS263 程序语言](/courses/grade-2/CS263)
+- 2020-03-07: [CS222 算法设计与分析](/courses/grade-3/CS222), [CS263 程序语言](/courses/grade-3/CS3612)
